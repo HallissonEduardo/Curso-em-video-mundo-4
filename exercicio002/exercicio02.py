@@ -40,8 +40,8 @@ if __name__ == '__main__':
     print(g1.__doc__)#DOCSTRING
     print(g1.__dict__)
     print(g1.__getstate__())
-
-
+    print(g1.__class__)
+    
 
 
     g2 = Gafanhoto(nome = "Brenno",
