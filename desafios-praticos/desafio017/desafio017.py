@@ -8,7 +8,7 @@ class Produto:
 
 
     def exibir(self):
-        return f"Produto disponivel: {self.nome} valore: R${self.preco:.2f}"
+        return f"Produto disponivel: {self.nome} valor: R${self.preco:.2f}"
 
 @dataclass
 class produto:
@@ -16,6 +16,6 @@ class produto:
     preco: float
 
     def __str__(self):
-        return f"Produto disponivel: {self.nome} valore: R${self.preco:.2f}"
+        return f"Produto disponivel: {self.nome} valor: R${self.preco:.2f}"
 
 
