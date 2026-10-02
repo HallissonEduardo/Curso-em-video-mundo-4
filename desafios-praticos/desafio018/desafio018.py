@@ -5,9 +5,9 @@ class Churrasco:
     consumo_padrao: float = 0.400
     preco_kg: float = 82.40
 
-    def __init__(self, titulo, qtd_pessoas, local: str ="Não tem local definido."):
-        self.titulo: str = titulo
-        self.qtd_pessoas: int = qtd_pessoas
+    def __init__(self, titulo: str, qtd_pessoas: int, local: str ="Não tem local definido."):
+        self.titulo = titulo
+        self.qtd_pessoas = qtd_pessoas
         self._local = local
 
     def calcular_qtd_carne(self)-> float:
@@ -20,8 +20,8 @@ class Churrasco:
     def calcular_custo_individual(self)-> float:
         return self.calcular_custo_total() / self.qtd_pessoas
 
-
-    def localizar(self, _local)->str:
+    @property
+    def local(self)->str:
         return self._local
 
     def analisar(self)-> str:
