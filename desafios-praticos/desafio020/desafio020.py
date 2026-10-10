@@ -9,8 +9,8 @@ class Jogos:
         self.favoritos = sorted(self.favoritos, key=str.lower)
 
 
-    def status(self):
-        mensagem = (f"Nome verdadeiro: {self.nome}, Nick name: {self.nick}\n"
+    def status(self)->str:
+        mensagem = (f"Nome verdadeiro: {self.nome} \nNick name: {self.nick}\n"
                     f"-----Jogos favoritos------\n")
         for i, fav in enumerate(self.favoritos, start=1):
             mensagem += f"Favorito {i}: {fav}\n"
