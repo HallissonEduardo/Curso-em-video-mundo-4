@@ -4,9 +4,10 @@ class Jogos:
         self.nick = nick
         self.favoritos = list()
 
-    def add_favorito(self, game ):
+    def add_favorito(self, game )-> list:
         self.favoritos.append(game)
         self.favoritos = sorted(self.favoritos, key=str.lower)
+        return self.favoritos
 
 
     def status(self)->str:

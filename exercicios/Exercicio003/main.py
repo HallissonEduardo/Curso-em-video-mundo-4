@@ -14,8 +14,8 @@ if __name__ == '__main__':
     #print(g1)
     #print(g1.saque(20))
     #print(g1.saque(30))
-    #print(g1.deposito(37))
-    #print(g1.saque(50))
+    print(g1.deposito(37))
+    print(g1.saque(50))
 
     print('-' * 40)
 

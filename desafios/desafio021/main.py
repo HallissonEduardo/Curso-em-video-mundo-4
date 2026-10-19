@@ -1,10 +1,10 @@
 from desafio021 import Caneta
 
-
 if __name__ == '__main__':
 
     caneta_azul = Caneta()
-    caneta_azul.destampar()
+    caneta_azul.tampar_destampar()
+    #caneta_azul.tampar_destampar()
 
     caneta_azul.escreva("Hello World")
     caneta_azul.quebrar_linha()
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     caneta_azul.quebrar_linha()
 
     caneta_verde = Caneta("Verde")
-    caneta_verde.destampar()
+    caneta_verde.tampar_destampar()
 
     nome = caneta_verde.leia("Digite seu nome: ")
 

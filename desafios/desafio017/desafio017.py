@@ -2,13 +2,14 @@ from dataclasses import dataclass
 
 class Produto:
 
-    def __init__(self, nome, preco):
-        self.nome: str = nome
-        self.preco: float = preco
+    def __init__(self, nome: str, preco: float):
+        self.nome = nome
+        self.preco = preco
 
 
-    def exibir(self):
+    def exibir(self)-> str:
         return f"Produto disponivel: {self.nome} valor: R${self.preco:.2f}"
+
 
 @dataclass
 class produto:

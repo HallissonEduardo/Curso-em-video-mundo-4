@@ -3,11 +3,12 @@ class Gafanoto:
         self.nome: str = ''
         self.idade: int = 0
 
-    def aniversario(self):
+    def aniversario(self)-> int:
         self.idade += 1
+        return self.idade
 
 
-    def mensagem(self):
+    def mensagem(self)-> str:
         return f"{self.nome} é Gafanhoto(a) e tem {self.idade} anos"
 
 

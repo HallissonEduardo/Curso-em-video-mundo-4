@@ -26,7 +26,7 @@ class Caneta:
         self.tampada = True
 
 
-    def leia(self, pergunta):
+    def leia(self, pergunta)-> str:
         if self.tampada:
             console.print("[bold red]Erro: Não da para usar a caneta tampada")
             return ""
@@ -35,19 +35,16 @@ class Caneta:
         return resposta
 
 
-    def escreva(self, msg):
+    def escreva(self, msg)-> None:
         if self.tampada:
             console.print("[bold red]Erro:[/] Não dá para escrever com a caneta tampada!")
         else:
             console.print(f"{self.escolha}{msg}[/]", end="")
 
-    def quebrar_linha(self):
+    def quebrar_linha(self)-> None:
         console.print()
 
-    def tampar(self)-> bool:
+    def tampar_destampar(self)-> bool:
+        self.tampada = not self.tampada
         return self.tampada
 
-
-    def destampar(self)-> bool:
-        self.tampada = False
-        return self.tampada
