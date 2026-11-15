@@ -32,9 +32,9 @@ def main():
     print("----------------------------------------------------------")
     print("Classe funcionario\n")
 
-    colaborador = Funcionario(nome="Gabriel Fernando",
+    colaborador = Funcionario(nome="Rafael",
                      idade=27,
-                     cargo="Desenvolvedor junior",
+                     cargo="Desenvolvedor",
                      setor="TI")
 
     colaborador.fazer_aniversario()

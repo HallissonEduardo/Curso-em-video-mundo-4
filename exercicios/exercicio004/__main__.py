@@ -6,7 +6,7 @@ from rich import  inspect
 
 def main():
     aluno = Aluno(nome="Hallisson",
-               idade=17,
+               idade=24,
                curso="ADS",
                turma="T01")
 
@@ -16,10 +16,10 @@ def main():
 
     print("----------------------------------------------------------")
 
-    educador = Professor(nome="Fabio",
+    educador = Professor(nome="Rafael",
                    idade=37,
-                   especialidade="Ciência da computação",
-                   nivel="Mestrado")
+                   especialidade="ADS",
+                   nivel="Pós Graduado")
 
     educador.fazer_aniversario()
     print(educador.dar_aula())
@@ -27,9 +27,9 @@ def main():
 
     print("----------------------------------------------------------")
 
-    colaborador = Funcionario(nome="Gabriel Fernando",
-                     idade=27,
-                     cargo="Desenvolvedor junior",
+    colaborador = Funcionario(nome="Thiago",
+                     idade=40,
+                     cargo="Desenvolvedor",
                      setor="TI")
 
     colaborador.fazer_aniversario()
